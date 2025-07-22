@@ -1,0 +1,12 @@
+SELECT
+  *
+FROM
+  public.location_candidats
+WHERE
+  "pseudo_lbc" ilike '%{{TableCandidats.searchText}}%'
+ORDER BY
+  "{{TableCandidats.sortOrder.column || 'id_candidat'}}" {{TableCandidats.sortOrder.order !== "desc" ? "" : "DESC"}}
+LIMIT
+  {{TableCandidats.pageSize}}
+OFFSET
+  {{TableCandidats.pageOffset}}

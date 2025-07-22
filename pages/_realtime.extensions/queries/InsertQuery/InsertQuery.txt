@@ -1,0 +1,14 @@
+INSERT INTO _realtime."extensions" (
+	"id",
+	"type",
+	"settings",
+	"tenant_external_id",
+	"inserted_at",
+	"updated_at")
+VALUES (
+	'{{insert_form.formData.id}}',
+	'{{insert_form.formData.type}}',
+	'{{insert_form.formData.settings}}',
+	'{{insert_form.formData.tenant_external_id}}',
+	'{{insert_form.formData.inserted_at}}',
+	'{{insert_form.formData.updated_at}}');

@@ -1,0 +1,82 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "alignment": "left",
+  "animateLoading": true,
+  "bottomRow": 18,
+  "boxShadow": "none",
+  "defaultOptionValue": "{{ '' }}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "defaultOptionValue"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "onSelectionChange"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onSelectionChange"
+    }
+  ],
+  "flexVerticalAlignment": "start",
+  "isDisabled": false,
+  "isInline": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "rsqbpyznal",
+  "label": "Statut Mobile",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 28,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "mobileBottomRow": 7,
+  "mobileLeftColumn": 18,
+  "mobileRightColumn": 38,
+  "mobileTopRow": 1,
+  "needsErrorInfo": false,
+  "onSelectionChange": "{{ FilterUtils.filtreAvecDelai() }}",
+  "options": [
+    {
+      "label": "Tous",
+      "value": ""
+    },
+    {
+      "label": "A demander",
+      "value": "A demander"
+    },
+    {
+      "label": "Demandé",
+      "value": "Demandé"
+    },
+    {
+      "label": "Relancé",
+      "value": "Relancé"
+    },
+    {
+      "label": "Ok",
+      "value": "Ok"
+    }
+  ],
+  "originalBottomRow": 18,
+  "originalTopRow": 1,
+  "parentColumnSpace": 10.869140625,
+  "parentId": "zh9eqp5m41",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 35,
+  "topRow": 1,
+  "type": "RADIO_GROUP_WIDGET",
+  "version": 1,
+  "widgetId": "i9s3jr5fg2",
+  "widgetName": "statut_mobile_search"
+}

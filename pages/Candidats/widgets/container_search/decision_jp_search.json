@@ -1,0 +1,79 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "alignment": "left",
+  "animateLoading": true,
+  "bottomRow": 18,
+  "boxShadow": "none",
+  "defaultOptionValue": "",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "onSelectionChange"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onSelectionChange"
+    }
+  ],
+  "flexVerticalAlignment": "start",
+  "isDisabled": false,
+  "isInline": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "rsqbpyznal",
+  "label": "Décision JP",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 21,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "mobileBottomRow": 7,
+  "mobileLeftColumn": 33,
+  "mobileRightColumn": 53,
+  "mobileTopRow": 1,
+  "needsErrorInfo": false,
+  "onSelectionChange": "{{ FilterUtils.filtreAvecDelai() }}",
+  "options": [
+    {
+      "label": "Tous",
+      "value": ""
+    },
+    {
+      "label": "Top",
+      "value": "1"
+    },
+    {
+      "label": "Ok",
+      "value": "2"
+    },
+    {
+      "label": "Why Not",
+      "value": "3"
+    },
+    {
+      "label": "Non",
+      "value": "4"
+    }
+  ],
+  "originalBottomRow": 18,
+  "originalTopRow": 1,
+  "parentColumnSpace": 10.869140625,
+  "parentId": "zh9eqp5m41",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 28,
+  "topRow": 1,
+  "type": "RADIO_GROUP_WIDGET",
+  "version": 1,
+  "widgetId": "zx2yjprbsy",
+  "widgetName": "decision_jp_search"
+}

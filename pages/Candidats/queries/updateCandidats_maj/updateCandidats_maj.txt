@@ -1,0 +1,17 @@
+UPDATE public.location_candidats
+SET
+  mobile = COALESCE(NULLIF({{ mobile_maj.text }}, ''), mobile),
+  garant = COALESCE(NULLIF({{ garant_maj.text }}, ''), garant),
+  occupation = COALESCE(NULLIF({{ occupation_maj.text }}, ''), occupation),
+  commentaires = COALESCE(NULLIF({{ commentaires_maj.text }}, ''), commentaires),
+ decision_jp = COALESCE(NULLIF({{ decision_jp_maj.selectedOptionValue }}::smallint, ''), decision_jp),
+  decision_candidat = COALESCE(NULLIF({{ decision_candidat_maj.selectedOptionValue }}, ''), decision_candidat),
+  statut_mobile = COALESCE(NULLIF({{ statut_mobile_maj.selectedOptionValue }}, ''), statut_mobile),
+  statut_video = COALESCE(NULLIF({{ statut_video_maj.selectedOptionValue }}, ''), statut_video),
+  statut_rdv = COALESCE(NULLIF({{ statut_rdv_maj.selectedOptionValue }}, ''), statut_rdv),
+  visale = COALESCE(NULLIF({{ visale_maj.selectedOptionValue }}, ''), visale),
+  garant_me = COALESCE(NULLIF({{ garant_me_maj.selectedOptionValue }}, ''), garant_me),
+--WHERE id_candidat = {{ TableCandidats.selectedRow.id_candidat }}
+WHERE id_candidat = {{ appsmith.store.Idcandidat }}
+
+RETURNING *;

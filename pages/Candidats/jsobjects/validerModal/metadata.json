@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "6876b6bce134ca2be5ebb705_db24b423-50ee-42ec-9273-253b1a364599",
+  "id": "Candidats_validerModal",
+  "unpublishedCollection": {
+    "name": "validerModal",
+    "pageId": "Candidats",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

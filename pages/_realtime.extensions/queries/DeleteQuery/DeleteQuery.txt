@@ -1,0 +1,2 @@
+DELETE FROM _realtime."extensions"
+  WHERE "id" = {{data_table.triggeredRow.id}};

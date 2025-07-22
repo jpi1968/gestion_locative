@@ -1,0 +1,7 @@
+UPDATE _realtime."extensions" SET
+		"type" = '{{update_form.fieldState.type.isVisible ? update_form.formData.type : update_form.sourceData.type}}',
+		"settings" = '{{update_form.fieldState.settings.isVisible ? update_form.formData.settings : update_form.sourceData.settings}}',
+    "tenant_external_id" = '{{update_form.fieldState.tenant_external_id.isVisible ? update_form.formData.tenant_external_id : update_form.sourceData.tenant_external_id}}',
+		"inserted_at" = '{{update_form.fieldState.inserted_at.isVisible ? update_form.formData.inserted_at : update_form.sourceData.inserted_at}}',
+		"updated_at" = '{{update_form.fieldState.updated_at.isVisible ? update_form.formData.updated_at : update_form.sourceData.updated_at}}'
+WHERE "id" = {{data_table.selectedRow.id}};

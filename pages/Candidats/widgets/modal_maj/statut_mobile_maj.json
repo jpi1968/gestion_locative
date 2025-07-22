@@ -1,0 +1,77 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "alignment": "left",
+  "animateLoading": true,
+  "bottomRow": 23,
+  "boxShadow": "none",
+  "defaultOptionValue": "{{ appsmith.store.selectedStatutMobile }}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "defaultOptionValue"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicTriggerPathList": [
+    {
+      "key": "onSelectionChange"
+    }
+  ],
+  "flexVerticalAlignment": "start",
+  "isDisabled": false,
+  "isInline": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "rsqbpyznal",
+  "label": "Statut Mobile",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 24,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "mobileBottomRow": 7,
+  "mobileLeftColumn": 18,
+  "mobileRightColumn": 38,
+  "mobileTopRow": 1,
+  "needsErrorInfo": false,
+  "onSelectionChange": "",
+  "options": [
+    {
+      "label": "Aucun",
+      "value": ""
+    },
+    {
+      "label": "A demander",
+      "value": "A demander"
+    },
+    {
+      "label": "Demandé",
+      "value": "Demandé"
+    },
+    {
+      "label": "Relancé",
+      "value": "Relancé"
+    },
+    {
+      "label": "Ok",
+      "value": "Ok"
+    }
+  ],
+  "originalBottomRow": 23,
+  "originalTopRow": 6,
+  "parentColumnSpace": 10.869140625,
+  "parentId": "vmqqxi4mbz",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 34,
+  "topRow": 6,
+  "type": "RADIO_GROUP_WIDGET",
+  "version": 1,
+  "widgetId": "2wieopv3n4",
+  "widgetName": "statut_mobile_maj"
+}

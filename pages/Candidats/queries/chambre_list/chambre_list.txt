@@ -1,0 +1,4 @@
+SELECT DISTINCT chambre
+FROM public.location_candidats
+WHERE chambre IS NOT NULL AND chambre <> ''
+ORDER BY chambre ASC;

@@ -1,0 +1,1 @@
+SELECT COUNT(*) from public.location_candidats where pseudo_lbc ilike '%{{TableCandidats.searchText}}%';

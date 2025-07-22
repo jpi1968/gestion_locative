@@ -1,0 +1,1 @@
+SELECT * FROM public.location_candidats where actif IS not NULL;

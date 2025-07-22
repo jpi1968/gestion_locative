@@ -1,0 +1,3 @@
+SELECT *
+FROM public.location_candidats
+WHERE actif = TRUE;
