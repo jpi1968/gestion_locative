@@ -1,19 +1,19 @@
 export default {
 
 	filtreAvecDelai: () => {
-    setTimeout(() => {
-      filterCandidats.run();
-    }, 500);
-  },
+		setTimeout(() => {
+			filterCandidats.run();
+		}, 500);
+	},
 
 	resetFiltres: () => {
-		resetWidget('pseudo_search');
+		resetWidget(pseudo_search);
 		resetWidget('mobile_search');
 		resetWidget('decision_jp_search');
 		resetWidget('statut_mobile_search');
 		resetWidget('statut_video_search');
 		resetWidget('statut_rdv_search');
-		filterCandidats.run();
+		//filterCandidats.run();
 	},
 
 	// Fonction pour peupler et ouvrir le modal

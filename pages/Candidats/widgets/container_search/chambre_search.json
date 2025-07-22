@@ -65,7 +65,7 @@
   "mobileRightColumn": 6,
   "mobileTopRow": 8,
   "needsErrorInfo": false,
-  "onOptionChange": "FilterUtils.filtreAvecDelai() }}",
+  "onOptionChange": "{{FilterUtils.filtreAvecDelai() }}",
   "optionLabel": "{{chambre_search.sourceData.map((item) => ( item.label ))}}",
   "optionValue": "{{chambre_search.sourceData.map((item) => ( item.value ))}}",
   "parentColumnSpace": 13.7763671875,

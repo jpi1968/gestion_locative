@@ -1,22 +1,15 @@
 SELECT *
 FROM public.location_candidats
-WHERE	
-	actif::BOOLEAN = TRUE
-  AND ({{ pseudo_search.text }} = '' OR pseudo_lbc::text ILIKE '%' || {{ pseudo_search.text }} || '%')
-  AND ({{ mobile_search.text }} = '' OR mobile::text ILIKE '%' || {{ mobile_search.text }} || '%')
-	--AND ({{ chambre_search.selectedOptionValue || '' }} = '' OR chambre::text ILIKE '%' || {{ chambre_search.selectedOptionValue || '' }} || '%')
-	--AND ({{ decision_jp_search.selectedOptionValue }} = '' OR decision_jp = CAST(NULLIF({{ decision_jp_search.selectedOptionValue }}, '') AS SMALLINT))
- -- AND ({{ decision_jp_search.selectedOptionValue }} = '' OR decision_jp = 2)
- --AND ( decision_jp = {{ decision_jp_search.selectedOptionValue }})
- --AND ({{ decision_jp_search.selectedOptionValue || 'NULL' }} IS NULL  OR decision_jp = CAST({{ decision_jp_search.selectedOptionValue || 'NULL' }} AS SMALLINT))
-AND (
-  {{ decision_jp_search.selectedOptionValue }} = ''
-  OR decision_jp = CAST(NULLIF({{ decision_jp_search.selectedOptionValue }}, '') AS INTEGER)
-)
-
-	--AND ({{ decision_jp_search.selectedOptionValue }} IS NULL  OR decision_jp = {{ decision_jp_search.selectedOptionValue }})
-  --AND ({{ statut_mobile_search.selectedOptionValue }} = '' OR statut_mobile = NULLIF({{ statut_mobile_search.selectedOptionValue }}, ''))
-  --AND ({{ statut_video_search.selectedOptionValue }} = '' OR statut_video = NULLIF({{ statut_video_search.selectedOptionValue }}, ''))
-  --AND ({{ statut_rdv_search.selectedOptionValue }} = '' OR statut_rdv = NULLIF({{ statut_rdv_search.selectedOptionValue }}, ''))
+WHERE
+    actif::BOOLEAN = TRUE
+  AND ({{ pseudo_search.text || '' }} = '' OR pseudo_lbc::text ILIKE '%' || {{ pseudo_search.text || '' }} || '%')
+  AND ({{ mobile_search.text || '' }} = '' OR mobile::text ILIKE '%' || {{ mobile_search.text || '' }} || '%')
+  AND ({{ chambre_search.selectedOptionValue || '' }} = '' OR chambre::text ILIKE '%' || {{ chambre_search.selectedOptionValue || '' }} || '%')
+	AND ({{ decision_jp_search.selectedOptionValue || '' }} = '' 
+     OR decision_jp = CAST(NULLIF({{ decision_jp_search.selectedOptionValue || '' }}, '') AS INTEGER))
+	AND ({{ statut_mobile_search.selectedOptionValue || '' }} = '' OR statut_mobile= NULLIF({{  statut_mobile_search.selectedOptionValue|| '' }}, ''))
+	AND ({{ statut_video_search.selectedOptionValue || '' }} = '' OR statut_video= NULLIF({{  statut_video_search.selectedOptionValue|| '' }}, ''))
+	AND ({{ statut_rdv_search.selectedOptionValue || '' }} = '' OR statut_rdv= NULLIF({{  statut_rdv_search.selectedOptionValue|| '' }}, ''))
+	
 ORDER BY date_last DESC NULLS LAST
 LIMIT 300;
