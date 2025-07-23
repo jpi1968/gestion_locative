@@ -71,7 +71,7 @@
     "actif",
     "EditActions1"
   ],
-  "columnUpdatedAt": 1753282313814,
+  "columnUpdatedAt": 1753282944477,
   "columnWidthMap": {
     "customColumn2": 89,
     "customColumn3": 67,
@@ -373,7 +373,7 @@
       "isEditable": false,
       "isSaveDisabled": "{{TableCandidats.processedTableData.map((currentRow, currentIndex) => ( !TableCandidats.updatedRowIndices.includes(currentIndex)))}}",
       "isSaveVisible": true,
-      "isVisible": true,
+      "isVisible": false,
       "label": "Save / Discard",
       "notation": "standard",
       "originalId": "EditActions1",
