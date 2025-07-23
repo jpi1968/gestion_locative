@@ -1,12 +1,12 @@
 UPDATE public.location_candidats
 SET
-    nom = COALESCE(NULLIF({{ nom_maj.text }}::text, ''), nom),
-    mobile = COALESCE(NULLIF({{ mobile_maj.text }}::text, ''), mobile),
-    email = COALESCE(NULLIF({{ email_maj.text }}::text, ''), email),
-    garant = COALESCE(NULLIF({{ garant_maj.text }}::text, ''), garant),
-    chambre = COALESCE(NULLIF({{ chambre_maj.selectedOptionValue }}::text, ''), chambre),
-    occupation = COALESCE(NULLIF({{ occupation_maj.text }}::text, ''), occupation),
-    commentaires = COALESCE(NULLIF({{ commentaires_maj.text }}::text, ''), commentaires),
+    nom = NULLIF({{ nom_maj.text }}::text, ''),
+    mobile = NULLIF({{ mobile_maj.text }}::text, ''),
+    email = NULLIF({{ email_maj.text }}::text, ''),
+    garant = NULLIF({{ garant_maj.text }}::text, ''),
+    chambre = NULLIF({{ chambre_maj.selectedOptionValue }}::text, ''),
+    occupation = NULLIF({{ occupation_maj.text }}::text, ''),
+    commentaires =NULLIF({{ commentaires_maj.text }}::text, ''), 
     decision_jp = CASE 
         WHEN {{ decision_jp_maj.selectedOptionValue }}::text = '' THEN NULL
         ELSE {{ decision_jp_maj.selectedOptionValue }}::smallint
@@ -17,9 +17,9 @@ SET
         WHEN {{ decision_candidat_maj.selectedOptionValue }}::text = 'false' THEN false
         ELSE decision_candidat
     END,
-    statut_mobile = COALESCE(NULLIF({{ statut_mobile_maj.selectedOptionValue }}::text, ''), statut_mobile),
-    statut_video = COALESCE(NULLIF({{ statut_video_maj.selectedOptionValue }}::text, ''), statut_video),
-    statut_rdv = COALESCE(NULLIF({{ statut_rdv_maj.selectedOptionValue }}::text, ''), statut_rdv),
+    statut_mobile = NULLIF({{ statut_mobile_maj.selectedOptionValue }}::text, ''),
+    statut_video = NULLIF({{ statut_video_maj.selectedOptionValue }}::text, ''), 
+    statut_rdv = NULLIF({{ statut_rdv_maj.selectedOptionValue }}::text, ''), 
     visale = CASE 
         WHEN {{ visale_maj.selectedOptionValue }}::text = ''  THEN NULL
         WHEN {{ visale_maj.selectedOptionValue }}::text = 'true' THEN true
@@ -32,10 +32,10 @@ SET
         WHEN {{ garantme_maj.selectedOptionValue }}::text = 'false' THEN false
         ELSE garant_me
     END,
-    duree_sejour = COALESCE(NULLIF({{ duree_sejour_maj.text }}::text, ''), duree_sejour),
-    debut_sejour = COALESCE(NULLIF({{ debut_sejour_maj.text }}::text, ''), debut_sejour),
-    genre = COALESCE(NULLIF({{ genre_maj.selectedOptionValue }}::text, ''), genre),
-    revenu = COALESCE(NULLIF({{ revenu_maj.text }}::text, ''), revenu),
-    orig = COALESCE(NULLIF({{ orig_maj.selectedOptionValue }}::text, ''), orig)
+    duree_sejour = NULLIF({{ duree_sejour_maj.text }}::text, ''), 
+    debut_sejour = NULLIF({{ debut_sejour_maj.text }}::text, ''), 
+    genre = NULLIF({{ genre_maj.selectedOptionValue }}::text, ''), 
+    revenu = NULLIF({{ revenu_maj.text }}::text, ''), 
+    orig = NULLIF({{ orig_maj.selectedOptionValue }}::text, '')
 WHERE id_candidat = {{ appsmith.store.selectedIdCandidat }}::integer
 RETURNING *;

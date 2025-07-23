@@ -43,6 +43,17 @@ export default {
 
       // Reset des champs du modal
       resetWidget('mobile_maj');
+			resetWidget('nom_maj');
+			resetWidget('email_maj');
+			resetWidget('mobile_maj');
+			resetWidget('pseudo_maj');
+			resetWidget('orig');
+			resetWidget('revenu_maj');
+			resetWidget('genre_maj');
+			resetWidget('debut_sejour_maj');
+			resetWidget('duree_sejour_maj');		
+			resetWidget('visale_maj');
+      resetWidget('garant_me_maj');
       resetWidget('garant_maj');
       resetWidget('occupation_maj');
       resetWidget('commentaires_maj');
@@ -51,9 +62,8 @@ export default {
       resetWidget('statut_mobile_maj');
       resetWidget('statut_video_maj');
       resetWidget('statut_rdv_maj');
-      resetWidget('visale_maj');
-      resetWidget('garant_me_maj');
-
+			
+			await filterCandidats.run();
       showAlert('Mise à jour effectuée avec succès', 'success');
     } catch (err) {
       showAlert('Erreur lors de la mise à jour : ' + err.message, 'error');

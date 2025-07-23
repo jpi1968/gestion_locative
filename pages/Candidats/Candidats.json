@@ -1,12 +1,13 @@
 {
   "gitSyncId": "6876b6bce134ca2be5ebb705_767ce0e4-ed1c-4dcd-a8e3-18a4708c23a0",
   "unpublishedPage": {
+    "customSlug": "candidats",
     "isHidden": false,
     "layouts": [
       {
         "dsl": {
           "backgroundColor": "none",
-          "bottomRow": 920,
+          "bottomRow": 970,
           "canExtend": true,
           "containerStyle": "none",
           "detachFromLayout": true,
