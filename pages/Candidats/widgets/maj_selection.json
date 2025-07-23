@@ -36,7 +36,7 @@
   "mobileRightColumn": 21,
   "mobileTopRow": 18,
   "needsErrorInfo": false,
-  "onClick": "{{ FilterUtils.ouvrirModal() }}",
+  "onClick": "{{ ModalUtils.ouvrirModal() }}",
   "originalBottomRow": 30,
   "originalTopRow": 26,
   "parentColumnSpace": 13.7763671875,

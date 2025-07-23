@@ -2,9 +2,9 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "alignment": "left",
   "animateLoading": true,
-  "bottomRow": 41,
+  "bottomRow": 44,
   "boxShadow": "none",
-  "defaultOptionValue": "{{ appsmith.store.selectedStatutVideo }}",
+  "defaultOptionValue": "{{ appsmith.store.selectedOrig }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -26,17 +26,17 @@
   "isRequired": false,
   "isVisible": true,
   "key": "rsqbpyznal",
-  "label": "Statut Video",
+  "label": "Orig",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 42,
+  "leftColumn": 26,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "mobileBottomRow": 7,
-  "mobileLeftColumn": 33,
-  "mobileRightColumn": 53,
+  "mobileLeftColumn": 18,
+  "mobileRightColumn": 38,
   "mobileTopRow": 1,
   "needsErrorInfo": false,
   "onSelectionChange": "",
@@ -46,28 +46,32 @@
       "value": ""
     },
     {
-      "label": "A envoyer",
-      "value": "A envoyer"
+      "label": "Ca",
+      "value": "Ca"
     },
     {
-      "label": "Envoyé",
-      "value": "Envoyé"
+      "label": "Ar",
+      "value": "Ar"
     },
     {
-      "label": "Consulté",
-      "value": "Consulté"
+      "label": "Bl",
+      "value": "Bl"
+    },
+    {
+      "label": "As",
+      "value": "As"
     }
   ],
-  "originalBottomRow": 41,
+  "originalBottomRow": 44,
   "originalTopRow": 27,
   "parentColumnSpace": 10.869140625,
   "parentId": "vmqqxi4mbz",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
-  "rightColumn": 51,
+  "rightColumn": 32,
   "topRow": 27,
   "type": "RADIO_GROUP_WIDGET",
   "version": 1,
-  "widgetId": "5b0xgxp72w",
-  "widgetName": "statut_video_maj"
+  "widgetId": "2wieopv3n4",
+  "widgetName": "orig_maj"
 }

@@ -2,9 +2,9 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "alignment": "left",
   "animateLoading": true,
-  "bottomRow": 41,
+  "bottomRow": 20,
   "boxShadow": "none",
-  "defaultOptionValue": "{{ appsmith.store.selectedStatutVideo }}",
+  "defaultOptionValue": "{{ appsmith.store.selectedGarantMe }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -26,7 +26,7 @@
   "isRequired": false,
   "isVisible": true,
   "key": "rsqbpyznal",
-  "label": "Statut Video",
+  "label": "Garant Me",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelTextSize": "0.875rem",
@@ -35,8 +35,8 @@
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "mobileBottomRow": 7,
-  "mobileLeftColumn": 33,
-  "mobileRightColumn": 53,
+  "mobileLeftColumn": 18,
+  "mobileRightColumn": 38,
   "mobileTopRow": 1,
   "needsErrorInfo": false,
   "onSelectionChange": "",
@@ -46,28 +46,24 @@
       "value": ""
     },
     {
-      "label": "A envoyer",
-      "value": "A envoyer"
+      "label": "Oui",
+      "value": "true"
     },
     {
-      "label": "Envoyé",
-      "value": "Envoyé"
-    },
-    {
-      "label": "Consulté",
-      "value": "Consulté"
+      "label": "Non",
+      "value": "false"
     }
   ],
-  "originalBottomRow": 41,
-  "originalTopRow": 27,
+  "originalBottomRow": 20,
+  "originalTopRow": 9,
   "parentColumnSpace": 10.869140625,
   "parentId": "vmqqxi4mbz",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
-  "rightColumn": 51,
-  "topRow": 27,
+  "rightColumn": 50,
+  "topRow": 9,
   "type": "RADIO_GROUP_WIDGET",
   "version": 1,
-  "widgetId": "5b0xgxp72w",
-  "widgetName": "statut_video_maj"
+  "widgetId": "erp9maxxcq",
+  "widgetName": "garantme_maj"
 }

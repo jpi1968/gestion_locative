@@ -37,7 +37,7 @@
   "mobileRightColumn": 63,
   "mobileTopRow": 18,
   "needsErrorInfo": false,
-  "onClick": "{{validerModal.updateAndRefresh() }}\n\n",
+  "onClick": "{{ModalUtils.updateAndRefresh() }}\n\n",
   "originalBottomRow": 29,
   "originalTopRow": 25,
   "parentId": "vmqqxi4mbz",

@@ -3,9 +3,9 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 26,
+  "bottomRow": 17,
   "boxShadow": "none",
-  "defaultText": "{{ appsmith.store.selectedOccupation}}",
+  "defaultText": "{{ appsmith.store.selectedDureeSejour }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -17,7 +17,7 @@
       "key": "defaultText"
     }
   ],
-  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicHeight": "FIXED",
   "dynamicTriggerPathList": [],
   "iconAlign": "left",
   "inputType": "TEXT",
@@ -26,13 +26,13 @@
   "isRequired": false,
   "isVisible": true,
   "key": "0nz9brnlgw",
-  "label": "Occupation",
+  "label": "Durée",
   "labelAlignment": "left",
   "labelPosition": "Left",
   "labelStyle": "",
   "labelTextSize": "0.875rem",
-  "labelWidth": "6",
-  "leftColumn": 1,
+  "labelWidth": 5,
+  "leftColumn": 19,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -41,8 +41,6 @@
   "mobileRightColumn": 6,
   "mobileTopRow": 4,
   "needsErrorInfo": false,
-  "originalBottomRow": 30,
-  "originalTopRow": 22,
   "parentColumnSpace": 13.552734375,
   "parentId": "vmqqxi4mbz",
   "parentRowSpace": 10,
@@ -51,11 +49,10 @@
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",
   "rightColumn": 32,
-  "shouldAllowAutofill": false,
   "showStepArrows": false,
-  "topRow": 22,
+  "topRow": 13,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "x5h5n33t3v",
-  "widgetName": "occupation_maj"
+  "widgetId": "y5ajd9crv0",
+  "widgetName": "duree_sejour_maj"
 }

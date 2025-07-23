@@ -1,5 +1,5 @@
 export default {
-  updateAndRefresh: async () => {
+  updateAndRefreshz: async () => {
     try {
       await updateCandidats_maj.run();
       //await filterCandidats.run();

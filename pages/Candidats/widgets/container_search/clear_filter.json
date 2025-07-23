@@ -36,7 +36,7 @@
   "mobileRightColumn": 21,
   "mobileTopRow": 18,
   "needsErrorInfo": false,
-  "onClick": "{{ FilterUtils.resetFiltres }}",
+  "onClick": "{{ FilterUtils.resetFiltres() }}",
   "parentColumnSpace": 13.7763671875,
   "parentId": "zh9eqp5m41",
   "parentRowSpace": 10,
