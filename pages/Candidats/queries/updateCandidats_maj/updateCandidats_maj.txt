@@ -7,10 +7,11 @@ SET
     chambre = NULLIF({{ chambre_maj.selectedOptionValue }}::text, ''),
     occupation = NULLIF({{ occupation_maj.text }}::text, ''),
     commentaires =NULLIF({{ commentaires_maj.text }}::text, ''), 
-    decision_jp = CASE 
-        WHEN {{ decision_jp_maj.selectedOptionValue }}::text = '' THEN NULL
-        ELSE {{ decision_jp_maj.selectedOptionValue }}::smallint
-    END,
+		decision_jp = CASE
+			WHEN {{ decision_jp_maj.selectedOptionValue }}::text = '' THEN NULL
+			WHEN {{ decision_jp_maj.selectedOptionValue }}::text IS NULL THEN NULL
+			ELSE ({{ decision_jp_maj.selectedOptionValue }}::text)::smallint
+		END,
     decision_candidat = CASE 
         WHEN {{ decision_candidat_maj.selectedOptionValue }}::text = '' THEN NULL
         WHEN {{ decision_candidat_maj.selectedOptionValue }}::text = 'true' THEN true
@@ -21,21 +22,29 @@ SET
     statut_video = NULLIF({{ statut_video_maj.selectedOptionValue }}::text, ''), 
     statut_rdv = NULLIF({{ statut_rdv_maj.selectedOptionValue }}::text, ''), 
     visale = CASE 
-        WHEN {{ visale_maj.selectedOptionValue }}::text = ''  THEN NULL
-        WHEN {{ visale_maj.selectedOptionValue }}::text = 'true' THEN true
-        WHEN {{ visale_maj.selectedOptionValue }}::text = 'false' THEN false
-        ELSE visale 
-    END,  
+			WHEN {{ visale_maj.selectedOptionValue }}::text = ''  THEN NULL
+			WHEN {{ visale_maj.selectedOptionValue }}::text = 'true' THEN true
+			WHEN {{ visale_maj.selectedOptionValue }}::text = 'false' THEN false
+			ELSE visale 
+			END,  
     garant_me = CASE 
-        WHEN {{ garantme_maj.selectedOptionValue }}::text = ''  IS NULL THEN NULL
-        WHEN {{ garantme_maj.selectedOptionValue }}::text = 'true' THEN true
-        WHEN {{ garantme_maj.selectedOptionValue }}::text = 'false' THEN false
-        ELSE garant_me
-    END,
+			WHEN {{ garantme_maj.selectedOptionValue }}::text = ''  IS NULL THEN NULL
+			WHEN {{ garantme_maj.selectedOptionValue }}::text = 'true' THEN true
+			WHEN {{ garantme_maj.selectedOptionValue }}::text = 'false' THEN false
+			ELSE garant_me
+			END,
+		rdv = CASE 
+			WHEN COALESCE({{rdv_maj.selectedOptionValue}}::text, '') = '' THEN NULL::timestamptz
+			ELSE {{rdv_maj.selectedOptionValue}}::text::timestamptz 
+			END,
     duree_sejour = NULLIF({{ duree_sejour_maj.text }}::text, ''), 
     debut_sejour = NULLIF({{ debut_sejour_maj.text }}::text, ''), 
     genre = NULLIF({{ genre_maj.selectedOptionValue }}::text, ''), 
     revenu = NULLIF({{ revenu_maj.text }}::text, ''), 
-    orig = NULLIF({{ orig_maj.selectedOptionValue }}::text, '')
+
+		orig = CASE 
+			WHEN {{ orig_maj.selectedOptionValue }} = '' THEN NULL
+			ELSE '{{ orig_maj.selectedOptionValue }}'::text
+  		END
 WHERE id_candidat = {{ appsmith.store.selectedIdCandidat }}::integer
 RETURNING *;

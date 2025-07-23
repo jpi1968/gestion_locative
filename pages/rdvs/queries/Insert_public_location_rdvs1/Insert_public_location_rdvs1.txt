@@ -1,0 +1,1 @@
+INSERT INTO public.location_rdvs ("datetime_rdv","chambre") VALUES ('{{(Table1.newRow || {}).datetime_rdv}}','{{(Table1.newRow || {}).chambre}}')

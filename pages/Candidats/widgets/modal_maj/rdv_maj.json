@@ -2,9 +2,9 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 5,
+  "bottomRow": 25,
   "boxShadow": "none",
-  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( appsmith.store.selectedChambre))(chambre_maj.options, chambre_maj.serverSideFiltering) }}",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( rdv_list.data[0].rdv_date))(rdv_maj.options, rdv_maj.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -56,7 +56,7 @@
   "labelText": "",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 17,
+  "leftColumn": 33,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -66,20 +66,20 @@
   "mobileTopRow": 8,
   "needsErrorInfo": false,
   "onOptionChange": "{{FilterUtils.filtreAvecDelai() }}",
-  "optionLabel": "{{chambre_maj.sourceData.map((item) => (item.label))}}",
-  "optionValue": "{{chambre_maj.sourceData.map((item) => (item.value))}}",
+  "optionLabel": "{{rdv_maj.sourceData.map((item) => (item.label))}}",
+  "optionValue": "{{rdv_maj.sourceData.map((item) => (item.value))}}",
   "parentColumnSpace": 13.7763671875,
   "parentId": "vmqqxi4mbz",
   "parentRowSpace": 10,
   "placeholderText": "",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 29,
+  "rightColumn": 58,
   "serverSideFiltering": false,
-  "sourceData": "{{[\n  { label: 'Tous', value: '' },\n  ...chambre_list.data.map(item => ({\n    label: item.chambre,\n    value: item.chambre\n  }))\n]}}",
-  "topRow": 1,
+  "sourceData": "{{[\n  ...rdv_list.data.map(item => ({\n    label: item.chambre+' - '+ moment(item.rdv_date).locale('fr').format('dddd DD/MM HH[h]:mm'),\n    value: item.rdv_date\n  }))\n]}}",
+  "topRow": 21,
   "type": "SELECT_WIDGET",
   "version": 1,
-  "widgetId": "847ngttfyi",
-  "widgetName": "chambre_maj"
+  "widgetId": "c9pik4j7ta",
+  "widgetName": "rdv_maj"
 }

@@ -5,7 +5,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 97,
+  "bottomRow": 136,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "cachedTableData": {},
   "canFreezeColumn": true,
@@ -54,15 +54,16 @@
     "email",
     "id_messages",
     "messagerie_lbc",
-    "date_last",
     "mailreponse_lbc",
     "dossier_locataire_lbc",
     "statut_mobile",
     "statut_video",
     "statut_rdv",
+    "rdv",
     "revenu",
     "occupation",
     "debut_sejour",
+    "date_last",
     "date_first",
     "decisions",
     "id_annonce_lbc",
@@ -71,7 +72,7 @@
     "actif",
     "EditActions1"
   ],
-  "columnUpdatedAt": 1753282944477,
+  "columnUpdatedAt": 1753302717214,
   "columnWidthMap": {
     "customColumn2": 89,
     "customColumn3": 67,
@@ -252,6 +253,9 @@
     },
     {
       "key": "primaryColumns.occupation.computedValue"
+    },
+    {
+      "key": "primaryColumns.rdv.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -287,6 +291,12 @@
     },
     {
       "key": "onRowSelected"
+    },
+    {
+      "key": "primaryColumns.rdv.outputFormat"
+    },
+    {
+      "key": "primaryColumns.date_last.outputFormat"
     }
   ],
   "dynamicTriggerPathList": [
@@ -339,7 +349,7 @@
   "onRowSelected": "storeValue('selectedCandidatId', TableCandidats.selectedRow.id_candidat);",
   "onSearchTextChanged": "{{\n            Select_public_location_candidats1.run();\n            Total_record_public_location_candidats1.run()\n          }}",
   "onSort": "{{\n            Select_public_location_candidats1.run();\n            Total_record_public_location_candidats1.run()\n          }}",
-  "originalBottomRow": 97,
+  "originalBottomRow": 136,
   "originalTopRow": 36,
   "parentColumnSpace": 14.3125,
   "parentId": "0",
@@ -629,7 +639,7 @@
       "alias": "date_last",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "columnType": "text",
+      "columnType": "date",
       "computedValue": "{{(() => { const tableData = TableCandidats.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"date_last\"])) : date_last })()}}",
       "currencyCode": "USD",
       "decimals": 0,
@@ -649,6 +659,7 @@
       "label": "date_last",
       "notation": "standard",
       "originalId": "date_last",
+      "outputFormat": "ddd DD/MM/YY HH:mm",
       "sticky": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,
@@ -660,7 +671,7 @@
       "alias": "debut_sejour",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "columnType": "date",
+      "columnType": "text",
       "computedValue": "{{(() => { const tableData = TableCandidats.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"debut_sejour\"])) : debut_sejour })()}}",
       "currencyCode": "USD",
       "decimals": 0,
@@ -1375,6 +1386,41 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
+    "rdv": {
+      "alias": "rdv",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "date",
+      "computedValue": "{{(() => { const tableData = TableCandidats.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"rdv\"])) : rdv })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "rdv",
+      "index": 33,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "rdv",
+      "notation": "standard",
+      "originalId": "rdv",
+      "outputFormat": "ddd DD/MM/YY HH:mm",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
     "revenu": {
       "alias": "revenu",
       "allowCellWrapping": false,
@@ -1540,7 +1586,7 @@
   "searchKey": "",
   "serverSidePaginationEnabled": true,
   "showInlineEditingOptionDropdown": true,
-  "tableData": "{{ filterCandidats.data }}",
+  "tableData": "{{ filterCandidats.data}}",
   "textSize": "0.875rem",
   "topRow": 36,
   "totalRecordsCount": "{{Total_record_public_location_candidats1.data[0].count}}",

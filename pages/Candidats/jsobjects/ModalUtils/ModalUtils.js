@@ -32,6 +32,7 @@ export default {
       await storeValue('selectedOccupation', this.normalizeValue(row.occupation));
       await storeValue('selectedCommentaires', this.normalizeValue(row.commentaires));
       await storeValue('selectedMessages', this.normalizeValue(row.messages));
+			await storeValue('selectedRdv', this.normalizeValue(row.rdv));
     }
     showModal(modal_maj.name);
   },

@@ -1,0 +1,5 @@
+INSERT INTO public.location_rdvs 
+(chambre, rdv_date) 
+VALUES
+({{chambre_sel.selectedOptionValue}}::text,{{date_rdv_sel.selectedDate}}::text::timestamptz)
+RETURNING *;

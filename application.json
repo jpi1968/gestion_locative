@@ -16,6 +16,10 @@
     {
       "id": "Candidats",
       "isDefault": true
+    },
+    {
+      "id": "rdvs",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {

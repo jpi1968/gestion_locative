@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 17,
+  "bottomRow": 23,
   "boxShadow": "none",
   "defaultText": "{{ appsmith.store.selectedDureeSejour }}",
   "dynamicBindingPathList": [
@@ -50,7 +50,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 32,
   "showStepArrows": false,
-  "topRow": 13,
+  "topRow": 19,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "y5ajd9crv0",

@@ -1,24 +1,23 @@
 {
-  "gitSyncId": "6876b6bce134ca2be5ebb705_767ce0e4-ed1c-4dcd-a8e3-18a4708c23a0",
+  "gitSyncId": "6876b6bce134ca2be5ebb705_fea60fbc-1ba1-4bf4-959a-cc81e2e24b16",
   "unpublishedPage": {
-    "customSlug": "candidats",
     "isHidden": false,
     "layouts": [
       {
         "dsl": {
           "backgroundColor": "none",
-          "bottomRow": 1360,
+          "bottomRow": 550,
           "canExtend": true,
           "containerStyle": "none",
           "detachFromLayout": true,
           "dynamicBindingPathList": [],
           "leftColumn": 0,
-          "minHeight": 520,
+          "minHeight": 570,
           "parentColumnSpace": 1,
           "parentRowSpace": 1,
           "rightColumn": 1224,
           "snapColumns": 64,
-          "snapRows": 50,
+          "snapRows": 55,
           "topRow": 0,
           "type": "CANVAS_WIDGET",
           "version": 94,
@@ -27,7 +26,7 @@
         }
       }
     ],
-    "name": "Candidats",
-    "slug": "candidats"
+    "name": "rdvs",
+    "slug": "rdvs"
   }
 }

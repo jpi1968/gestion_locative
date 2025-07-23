@@ -1,0 +1,1 @@
+UPDATE public.location_rdvs SET "datetime_rdv"= '{{Table1.updatedRow.datetime_rdv}}', "chambre"= '{{Table1.updatedRow.chambre}}' WHERE "id_rdv"= {{Table1.updatedRow.id_rdv}};
