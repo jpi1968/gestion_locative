@@ -2,7 +2,7 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 25,
+  "bottomRow": 24,
   "defaultSelectedValues": "[\n  \"\",\"true\"\n]",
   "dynamicBindingPathList": [
     {
@@ -58,7 +58,7 @@
       "value": "false"
     }
   ],
-  "originalBottomRow": 24,
+  "originalBottomRow": 27,
   "originalTopRow": 20,
   "parentColumnSpace": 17.3447265625,
   "parentId": "zh9eqp5m41",
