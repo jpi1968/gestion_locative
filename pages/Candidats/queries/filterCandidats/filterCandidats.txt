@@ -1,5 +1,5 @@
 SELECT *
-FROM public.location_candidats
+FROM public.location_view_n8n
 WHERE
     actif::BOOLEAN = TRUE
   AND ({{ pseudo_search.text || '' }} = '' OR pseudo_lbc::text ILIKE '%' || {{ pseudo_search.text || '' }} || '%')
