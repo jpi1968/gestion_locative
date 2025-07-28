@@ -68,6 +68,8 @@
   "onOptionChange": "{{FilterUtils.filtreAvecDelai() }}",
   "optionLabel": "{{rdv_maj.sourceData.map((item) => (item.label))}}",
   "optionValue": "{{rdv_maj.sourceData.map((item) => (item.value))}}",
+  "originalBottomRow": 25,
+  "originalTopRow": 21,
   "parentColumnSpace": 13.7763671875,
   "parentId": "vmqqxi4mbz",
   "parentRowSpace": 10,
