@@ -324,9 +324,6 @@
       "key": "primaryColumns.customColumn4.boxShadow"
     },
     {
-      "key": "primaryColumns.pseudo_lbc.buttonColor"
-    },
-    {
       "key": "primaryColumns.pseudo_lbc.borderRadius"
     },
     {
@@ -1743,8 +1740,10 @@
       "allowSameOptionsInNewRow": true,
       "borderRadius": "{{TableCandidats.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
       "boxShadow": "{{TableCandidats.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
-      "buttonColor": "{{TableCandidats.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
+      "buttonColor": "#1d4ed8",
       "buttonLabel": "{{(() => { const tableData = TableCandidats.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"pseudo_lbc\"])) : currentRow[\"pseudo_lbc\"] })()}}",
+      "buttonVariant": "TERTIARY",
+      "cellBackground": "#FFFFFF",
       "columnType": "button",
       "computedValue": "{{(() => { const tableData = TableCandidats.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"pseudo_lbc\"])) : pseudo_lbc })()}}",
       "currencyCode": "USD",
