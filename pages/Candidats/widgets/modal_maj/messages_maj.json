@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 68,
+  "bottomRow": 64,
   "boxShadow": "none",
   "defaultText": "{{ appsmith.store.selectedMessages }}",
   "dynamicBindingPathList": [

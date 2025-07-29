@@ -6,9 +6,10 @@ export default {
     if (typeof value === 'boolean') return String(value); // true/false
     return String(value || '');
   },
-	
-  ouvrirModal: async () => {
-    const row = TableCandidats.selectedRow;
+	ouvrirModal: async (rowData) => {
+  const row = rowData || TableCandidats.selectedRow;
+//  ouvrirModal: async () => {
+  //  const row = TableCandidats.selectedRow;
     if (row) {
 			await storeValue('selectedIdCandidat', this.normalizeValue(row.id_candidat));
       await storeValue('selectedPseudo', this.normalizeValue(row.pseudo_lbc));

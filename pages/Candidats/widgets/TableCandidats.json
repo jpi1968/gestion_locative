@@ -5,7 +5,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 137,
+  "bottomRow": 142,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "cachedTableData": {},
   "canFreezeColumn": true,
@@ -322,6 +322,18 @@
     },
     {
       "key": "primaryColumns.customColumn4.boxShadow"
+    },
+    {
+      "key": "primaryColumns.pseudo_lbc.buttonColor"
+    },
+    {
+      "key": "primaryColumns.pseudo_lbc.borderRadius"
+    },
+    {
+      "key": "primaryColumns.pseudo_lbc.boxShadow"
+    },
+    {
+      "key": "primaryColumns.pseudo_lbc.buttonLabel"
     }
   ],
   "dynamicPropertyPathList": [
@@ -369,6 +381,9 @@
     },
     {
       "key": "primaryColumns.customColumn4.buttonColor"
+    },
+    {
+      "key": "primaryColumns.pseudo_lbc.onClick"
     }
   ],
   "dynamicTriggerPathList": [
@@ -395,6 +410,9 @@
     },
     {
       "key": "primaryColumns.customColumn4.onClick"
+    },
+    {
+      "key": "primaryColumns.pseudo_lbc.onClick"
     }
   ],
   "enableClientSideSearch": false,
@@ -424,7 +442,7 @@
   "onRowSelected": "storeValue('selectedCandidatId', TableCandidats.selectedRow.id_candidat);",
   "onSearchTextChanged": "{{\n            Select_public_location_candidats1.run();\n            Total_record_public_location_candidats1.run()\n          }}",
   "onSort": "{{\n            Select_public_location_candidats1.run();\n            Total_record_public_location_candidats1.run()\n          }}",
-  "originalBottomRow": 137,
+  "originalBottomRow": 142,
   "originalTopRow": 37,
   "parentColumnSpace": 14.3125,
   "parentId": "0",
@@ -1723,9 +1741,14 @@
       "alias": "pseudo_lbc",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "columnType": "text",
+      "borderRadius": "{{TableCandidats.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
+      "boxShadow": "{{TableCandidats.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
+      "buttonColor": "{{TableCandidats.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
+      "buttonLabel": "{{(() => { const tableData = TableCandidats.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"pseudo_lbc\"])) : currentRow[\"pseudo_lbc\"] })()}}",
+      "columnType": "button",
       "computedValue": "{{(() => { const tableData = TableCandidats.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"pseudo_lbc\"])) : pseudo_lbc })()}}",
       "currencyCode": "USD",
+      "customAlias": "",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
@@ -1742,6 +1765,7 @@
       "isVisible": true,
       "label": "pseudo_lbc",
       "notation": "standard",
+      "onClick": "{{ModalUtils.ouvrirModal(currentRow)}}",
       "originalId": "pseudo_lbc",
       "sticky": "",
       "textSize": "0.875rem",
