@@ -4,7 +4,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 25,
   "boxShadow": "none",
-  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( rdv_list.data[0].rdv_date))(rdv_maj.options, rdv_maj.serverSideFiltering) }}",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( appsmith.store.selectedRdv))(rdv_maj.options, rdv_maj.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
