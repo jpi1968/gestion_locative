@@ -44,8 +44,8 @@
     "mobile",
     "customColumn3",
     "customColumn4",
-    "visale",
     "rdv",
+    "visale",
     "garant_me",
     "garant",
     "genre",
@@ -86,7 +86,7 @@
     "messagerie_lbc",
     "EditActions1"
   ],
-  "columnUpdatedAt": 1753881519120,
+  "columnUpdatedAt": 1753882014649,
   "columnWidthMap": {
     "customColumn1": 153,
     "customColumn2": 60,
