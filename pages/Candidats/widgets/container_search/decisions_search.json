@@ -3,7 +3,7 @@
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 24,
-  "defaultSelectedValues": "[\n  \"\",\"true\"\n]",
+  "defaultSelectedValues": "[]",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -16,6 +16,9 @@
   "dynamicPropertyPathList": [
     {
       "key": "onSelectionChange"
+    },
+    {
+      "key": "isSelectAll"
     }
   ],
   "dynamicTriggerPathList": [
@@ -28,6 +31,7 @@
   "isInline": true,
   "isLoading": false,
   "isRequired": false,
+  "isSelectAll": "{{}}",
   "isVisible": true,
   "key": "ed30k9dan0",
   "labelAlignment": "left",
