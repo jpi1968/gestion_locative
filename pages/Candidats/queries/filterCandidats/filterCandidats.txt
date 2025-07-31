@@ -14,11 +14,11 @@ WHERE
 	AND (
   {{ decisions_search.selectedValues.length }} = 0
   OR 
-  ({{ decisions_search.selectedValues.includes('') }} AND decision_candidat IS NULL)
+  ({{ decisions_search.selectedValues.includes('') }} AND decisions IS NULL)
   OR 
-  ({{ decisions_search.selectedValues.includes('true') }} AND decision_candidat = true)
+  ({{ decisions_search.selectedValues.includes('true') }} AND decisions = true)
   OR 
-  ({{ decisions_search.selectedValues.includes('false') }} AND decision_candidat = false)
+  ({{ decisions_search.selectedValues.includes('false') }} AND decisions = false)
 )
 	
 ORDER BY date_last DESC NULLS LAST
