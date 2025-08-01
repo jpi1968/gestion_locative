@@ -3,7 +3,8 @@ FROM public.location_view_n8n
 WHERE
     actif::BOOLEAN = TRUE
   AND ({{ pseudo_search.text || '' }} = '' OR pseudo_lbc::text ILIKE '%' || {{ pseudo_search.text || '' }} || '%')
-  AND ({{ mobile_search.text || '' }} = '' OR mobile::text ILIKE '%' || {{ mobile_search.text || '' }} || '%')
+	AND ({{ mobile_search.text || '' }} = '' 
+     OR REPLACE(mobile::text, ' ', '') ILIKE '%' || REPLACE({{ mobile_search.text || '' }}, ' ', '') || '%')
   AND ({{ chambre_search.selectedOptionValue || '' }} = '' OR chambre::text ILIKE '%' || {{ chambre_search.selectedOptionValue || '' }} || '%')
 	AND ({{ decision_jp_search.selectedOptionValue || '' }} = '' 
      OR decision_jp = CAST(NULLIF({{ decision_jp_search.selectedOptionValue || '' }}, '') AS INTEGER))

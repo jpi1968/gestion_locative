@@ -35,6 +35,7 @@ export default {
       await storeValue('selectedMessages', this.normalizeValue(row.messages));
 			await storeValue('selectedRdv', this.normalizeValue(row.rdv));
 			await storeValue('selectedDossierLocataireLbc', this.normalizeValue(row.dossier_locataire_lbc));
+			await storeValue('selectedUrlAnnonce', this.normalizeValue(row.url_annonce));
     }
     showModal(modal_maj.name);
   },
@@ -66,6 +67,8 @@ export default {
       resetWidget('statut_video_maj');
       resetWidget('statut_rdv_maj');
 			resetWidget('dossier_maj');
+			resetWidget('mobile_call_maj');
+			resetWidget('url_annonce_maj');
 			
 			await filterCandidats.run();
       showAlert('Mise à jour effectuée avec succès', 'success');
