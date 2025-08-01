@@ -1,4 +1,4 @@
 SELECT *
 FROM public.location_rdvs
 WHERE chambre IS NOT NULL AND chambre <> '' AND rdv_date>= (CURRENT_DATE AT TIME ZONE 'Europe/Paris')::timestamptz
-ORDER BY rdv_date DESC;
+ORDER BY rdv_date ASC;
