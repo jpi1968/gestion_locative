@@ -3,15 +3,15 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 5,
   "boxShadow": "none",
-  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonColor": "#93c5fd",
   "buttonVariant": "PRIMARY",
   "disabledWhenInvalid": false,
   "dynamicBindingPathList": [
     {
-      "key": "buttonColor"
+      "key": "borderRadius"
     },
     {
-      "key": "borderRadius"
+      "key": "text"
     }
   ],
   "dynamicPropertyPathList": [
@@ -28,15 +28,15 @@
   "isDisabled": false,
   "isLoading": false,
   "isVisible": true,
-  "key": "ab3dtcg4a6",
-  "leftColumn": 39,
+  "key": "e7tz0zmvbn",
+  "leftColumn": 29,
   "minWidth": 120,
-  "mobileBottomRow": 5,
-  "mobileLeftColumn": 30,
-  "mobileRightColumn": 46,
-  "mobileTopRow": 1,
+  "mobileBottomRow": 10,
+  "mobileLeftColumn": 24,
+  "mobileRightColumn": 40,
+  "mobileTopRow": 6,
   "needsErrorInfo": false,
-  "onClick": "{{ appsmith.store.selectedDossierLocataireLbc \n  && navigateTo(appsmith.store.selectedDossierLocataireLbc, {}, 'NEW_WINDOW') }}",
+  "onClick": "{{appsmith.store.selectedMobile ? navigateTo('tel:' + encodeURIComponent(appsmith.store.selectedMobile)) : showAlert('Aucun numéro', 'warning') }}",
   "parentColumnSpace": 13.09375,
   "parentId": "vmqqxi4mbz",
   "parentRowSpace": 10,
@@ -45,11 +45,11 @@
   "renderMode": "CANVAS",
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 48,
-  "text": "Dossier lbc",
+  "rightColumn": 37,
+  "text": "{{appsmith.store.selectedMobile ? '📞':'' }}",
   "topRow": 1,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "owj18vf3bj",
-  "widgetName": "dossier_maj"
+  "widgetId": "5ojc7oa2m5",
+  "widgetName": "mobile_call_maj"
 }
