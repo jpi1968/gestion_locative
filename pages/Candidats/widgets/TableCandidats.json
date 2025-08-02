@@ -45,6 +45,7 @@
     "customColumn3",
     "customColumn4",
     "rdv",
+    "statut_rdv",
     "visale",
     "garant_me",
     "garant",
@@ -57,7 +58,6 @@
     "dossier_locataire_lbc",
     "statut_mobile",
     "statut_video",
-    "statut_rdv",
     "revenu",
     "occupation",
     "debut_sejour",
@@ -86,7 +86,7 @@
     "messagerie_lbc",
     "EditActions1"
   ],
-  "columnUpdatedAt": 1754149834142,
+  "columnUpdatedAt": 1754157913425,
   "columnWidthMap": {
     "customColumn1": 153,
     "customColumn2": 60,
