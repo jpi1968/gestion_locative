@@ -2,7 +2,7 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "alignment": "left",
   "animateLoading": true,
-  "bottomRow": 48,
+  "bottomRow": 51,
   "boxShadow": "none",
   "defaultOptionValue": "{{ appsmith.store.selectedStatutRdv }}",
   "dynamicBindingPathList": [
@@ -68,6 +68,10 @@
     {
       "label": "Lapin",
       "value": "Lapin"
+    },
+    {
+      "label": "Peux pas",
+      "value": "Peux pas"
     }
   ],
   "originalBottomRow": 48,
