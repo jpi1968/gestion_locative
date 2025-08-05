@@ -36,6 +36,11 @@ export default {
 			await storeValue('selectedRdv', this.normalizeValue(row.rdv));
 			await storeValue('selectedDossierLocataireLbc', this.normalizeValue(row.dossier_locataire_lbc));
 			await storeValue('selectedUrlAnnonce', this.normalizeValue(row.url_annonce));
+			await storeValue('selectedAdresse', this.normalizeValue(row.adresse));
+			await storeValue('selectedVille', this.normalizeValue(row.ville));
+			await storeValue('selectedGmaps', this.normalizeValue(row.gmaps));
+			await storeValue('selectedVideoAppart', this.normalizeValue(row.video_appart));
+			await storeValue('selectedVideoChambre', this.normalizeValue(row.video_chambre));
     }
     showModal(modal_maj.name);
   },
