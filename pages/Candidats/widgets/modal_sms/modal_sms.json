@@ -1,14 +1,14 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 26,
+  "bottomRow": 634,
   "boxShadow": "none",
   "canEscapeKeyClose": true,
   "canOutsideClickClose": true,
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 260,
+      "bottomRow": 590,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": true,
       "detachFromLayout": true,
@@ -57,14 +57,15 @@
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
-  "height": 260,
+  "dynamicTriggerPathList": [],
+  "height": 590,
   "isCanvas": true,
   "isLoading": false,
   "key": "g8c2xaollb",
   "leftColumn": 5,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 24,
-  "minHeight": 260,
+  "minHeight": 590,
   "mobileBottomRow": 68,
   "mobileLeftColumn": 5,
   "mobileRightColumn": 29,
@@ -81,5 +82,5 @@
   "version": 2,
   "widgetId": "gm7jpadmz2",
   "widgetName": "modal_sms",
-  "width": 1044
+  "width": 1212
 }

@@ -2,7 +2,7 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 24,
+  "bottomRow": 30,
   "defaultSelectedValues": "[\n  \"\"\n]",
   "dynamicBindingPathList": [
     {
@@ -54,18 +54,22 @@
     {
       "label": "gmaps",
       "value": "gmaps"
+    },
+    {
+      "label": "annonce",
+      "value": "annonce"
     }
   ],
-  "originalBottomRow": 24,
+  "originalBottomRow": 27,
   "originalTopRow": 8,
   "parentColumnSpace": 16.125,
   "parentId": "zzh1yxha8u",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
-  "rightColumn": 10,
+  "rightColumn": 3,
   "topRow": 8,
   "type": "CHECKBOX_GROUP_WIDGET",
   "version": 2,
   "widgetId": "4g5lf88cj2",
-  "widgetName": "CheckboxGroup1"
+  "widgetName": "checkbox_sms"
 }

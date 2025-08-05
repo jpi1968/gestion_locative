@@ -11,9 +11,6 @@
     },
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "text"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
@@ -23,7 +20,7 @@
   "fontStyle": "BOLD",
   "isLoading": false,
   "isVisible": true,
-  "key": "o5xda6zf2e",
+  "key": "rdzlnvz0f3",
   "leftColumn": 1,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
@@ -33,21 +30,19 @@
   "mobileRightColumn": 41,
   "mobileTopRow": 1,
   "needsErrorInfo": false,
-  "originalBottomRow": 7,
-  "originalTopRow": 1,
   "overflow": "NONE",
-  "parentId": "vmqqxi4mbz",
+  "parentId": "zzh1yxha8u",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 12,
+  "rightColumn": 9,
   "shouldTruncate": false,
-  "text": "{{ appsmith.store.selectedPseudo }}",
+  "text": "Envoi de SMS",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 1,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "ad0dynj6df",
-  "widgetName": "pseudo"
+  "widgetId": "7dr9wkpap8",
+  "widgetName": "title_sms"
 }

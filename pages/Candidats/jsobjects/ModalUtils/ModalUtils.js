@@ -44,6 +44,44 @@ export default {
     }
     showModal(modal_maj.name);
   },
+	ouvrirModalSms: async () => {
+  // const row = rowData || TableCandidats.selectedRow;
+// //  ouvrirModal: async () => {
+  // //  const row = TableCandidats.selectedRow;
+    // if (row) {
+			// await storeValue('selectedIdCandidat', this.normalizeValue(row.id_candidat));
+      // await storeValue('selectedPseudo', this.normalizeValue(row.pseudo_lbc));
+			// await storeValue('selectedNom', this.normalizeValue(row.nom));
+      // await storeValue('selectedMobile', this.normalizeValue(row.mobile));
+      // await storeValue('selectedEmail', this.normalizeValue(row.email));
+      // await storeValue('selectedRevenu', this.normalizeValue(row.revenu));
+      // await storeValue('selectedGenre', this.normalizeValue(row.genre));
+      // await storeValue('selectedOrig', this.normalizeValue(row.orig));
+			// await storeValue('selectedChambre', this.normalizeValue(row.chambre));
+			// await storeValue('selectedDureeSejour', this.normalizeValue(row.duree_sejour));
+			// await storeValue('selectedDebutSejour', this.normalizeValue(row.debut_sejour));
+      // await storeValue('selectedDecisionJp', this.normalizeValue(row.decision_jp));
+      // await storeValue('selectedDecisionCandidat', this.normalizeValue(row.decision_candidat)); // boolean → "true"/"false"
+      // await storeValue('selectedStatutMobile', this.normalizeValue(row.statut_mobile));
+      // await storeValue('selectedStatutVideo', this.normalizeValue(row.statut_video));
+      // await storeValue('selectedStatutRdv', this.normalizeValue(row.statut_rdv));
+      // await storeValue('selectedVisale', this.normalizeValue(row.visale)); 
+      // await storeValue('selectedGarantMe', this.normalizeValue(row.garant_me));
+      // await storeValue('selectedGarant', this.normalizeValue(row.garant));
+      // await storeValue('selectedOccupation', this.normalizeValue(row.occupation));
+      // await storeValue('selectedCommentaires', this.normalizeValue(row.commentaires));
+      // await storeValue('selectedMessages', this.normalizeValue(row.messages));
+			// await storeValue('selectedRdv', this.normalizeValue(row.rdv));
+			// await storeValue('selectedDossierLocataireLbc', this.normalizeValue(row.dossier_locataire_lbc));
+			// await storeValue('selectedUrlAnnonce', this.normalizeValue(row.url_annonce));
+			// await storeValue('selectedAdresse', this.normalizeValue(row.adresse));
+			// await storeValue('selectedVille', this.normalizeValue(row.ville));
+			// await storeValue('selectedGmaps', this.normalizeValue(row.gmaps));
+			// await storeValue('selectedVideoAppart', this.normalizeValue(row.video_appart));
+			// await storeValue('selectedVideoChambre', this.normalizeValue(row.video_chambre));
+    // }
+    showModal(modal_sms.name);
+  },
 	  updateAndRefresh: async () => {
     try {
       await updateCandidats_maj.run();

@@ -4,8 +4,7 @@
   "bottomRow": 22,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-  "buttonStyle": "PRIMARY",
-  "buttonVariant": "SECONDARY",
+  "buttonVariant": "PRIMARY",
   "disabledWhenInvalid": false,
   "dynamicBindingPathList": [
     {
@@ -13,6 +12,11 @@
     },
     {
       "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
     }
   ],
   "dynamicTriggerPathList": [
@@ -24,26 +28,28 @@
   "isDisabled": false,
   "isLoading": false,
   "isVisible": true,
-  "key": "xuforcsyfk",
-  "leftColumn": 31,
+  "key": "cldixgy9ap",
+  "leftColumn": 27,
   "minWidth": 120,
-  "mobileBottomRow": 22,
-  "mobileLeftColumn": 31,
-  "mobileRightColumn": 47,
-  "mobileTopRow": 18,
+  "mobileBottomRow": 14,
+  "mobileLeftColumn": 26,
+  "mobileRightColumn": 42,
+  "mobileTopRow": 10,
   "needsErrorInfo": false,
-  "onClick": "{{closeModal(modal_sms.name);}}",
+  "onClick": "(() => {\n  const add_item = `Lien Google Maps:\t${gmaps_sms.text}`;\n  \n  const currentValue = appsmith.store.sms_content || \"\";\n  const separator = currentValue ? \"\\n\\n\" : \"\";\n  const newValue = currentValue + separator + add_item;\n  \n  storeValue(\"sms_content\", newValue);\n  message_input_sms.setValue(newValue); // ← Widget Multiline Input\n})();",
+  "parentColumnSpace": 18.75,
   "parentId": "zzh1yxha8u",
+  "parentRowSpace": 10,
   "placement": "CENTER",
   "recaptchaType": "V3",
   "renderMode": "CANVAS",
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 47,
-  "text": "Close",
+  "rightColumn": 34,
+  "text": "GMaps",
   "topRow": 18,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "7mxbvv5i01",
-  "widgetName": "Button2"
+  "widgetId": "dsojem9ezh",
+  "widgetName": "bt_gmaps_sms"
 }

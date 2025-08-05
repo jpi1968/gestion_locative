@@ -3,9 +3,9 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 87,
+  "bottomRow": 19,
   "boxShadow": "none",
-  "defaultText": "{{ appsmith.store.selectedMessages }}",
+  "defaultText": "{{ appsmith.store.sms_content || \"\" }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -18,43 +18,53 @@
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
-  "dynamicTriggerPathList": [],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onTextChanged"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onTextChanged"
+    }
+  ],
   "iconAlign": "left",
   "inputType": "MULTI_LINE_TEXT",
   "isDisabled": false,
   "isLoading": false,
   "isRequired": false,
   "isVisible": true,
-  "key": "gy8p6n13rm",
-  "label": "",
+  "key": "e2znq4fslc",
+  "label": "Message",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 0,
+  "leftColumn": 35,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 42,
-  "mobileLeftColumn": 0,
-  "mobileRightColumn": 5,
-  "mobileTopRow": 35,
+  "mobileBottomRow": 22,
+  "mobileLeftColumn": 45,
+  "mobileRightColumn": 64,
+  "mobileTopRow": 15,
   "needsErrorInfo": false,
-  "originalBottomRow": 87,
-  "originalTopRow": 60,
-  "parentColumnSpace": 13.09375,
-  "parentId": "vmqqxi4mbz",
+  "onTextChanged": "(() => {\n  // Synchronise la saisie manuelle avec le store\n  storeValue(\"sms_content\", message_input_sms.text);\n})();",
+  "originalBottomRow": 65,
+  "originalTopRow": 9,
+  "parentColumnSpace": 18.75,
+  "parentId": "zzh1yxha8u",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",
-  "rightColumn": 58,
+  "rightColumn": 64,
   "shouldAllowAutofill": false,
   "showStepArrows": false,
-  "topRow": 60,
+  "topRow": 9,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "28r3adfaf1",
-  "widgetName": "messages_maj"
+  "widgetId": "8y1cb431vt",
+  "widgetName": "message_input_sms"
 }
