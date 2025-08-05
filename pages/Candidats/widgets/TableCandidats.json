@@ -84,9 +84,10 @@
     "transports",
     "environnement",
     "messagerie_lbc",
+    "a_louer",
     "EditActions1"
   ],
-  "columnUpdatedAt": 1754157913425,
+  "columnUpdatedAt": 1754341233511,
   "columnWidthMap": {
     "customColumn1": 153,
     "customColumn2": 60,
@@ -102,6 +103,7 @@
     "nom": 94,
     "orig": 64,
     "pseudo_lbc": 120,
+    "statut_rdv": 90,
     "visale": 61
   },
   "customIsLoading": false,
@@ -338,6 +340,9 @@
     },
     {
       "key": "primaryColumns.pseudo_lbc.buttonLabel"
+    },
+    {
+      "key": "primaryColumns.a_louer.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -491,6 +496,40 @@
       "sticky": "right",
       "thousandSeparator": true,
       "validation": {},
+      "width": 150
+    },
+    "a_louer": {
+      "alias": "a_louer",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "checkbox",
+      "computedValue": "{{(() => { const tableData = TableCandidats.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"a_louer\"])) : a_louer })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "a_louer",
+      "index": 39,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "a_louer",
+      "notation": "standard",
+      "originalId": "a_louer",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
       "width": 150
     },
     "actif": {

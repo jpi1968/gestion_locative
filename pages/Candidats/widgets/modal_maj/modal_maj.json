@@ -1,14 +1,14 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 756,
+  "bottomRow": 736,
   "boxShadow": "none",
   "canEscapeKeyClose": true,
   "canOutsideClickClose": true,
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 750,
+      "bottomRow": 730,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": true,
       "detachFromLayout": true,
@@ -57,14 +57,14 @@
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
-  "height": 750,
+  "height": 730,
   "isCanvas": true,
   "isLoading": false,
   "key": "9dkpnuohjh",
   "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 24,
-  "minHeight": 750,
+  "minHeight": 730,
   "mobileBottomRow": 30,
   "mobileLeftColumn": 0,
   "mobileRightColumn": 3,

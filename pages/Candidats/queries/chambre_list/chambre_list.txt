@@ -1,4 +1,4 @@
 SELECT DISTINCT chambre
-FROM public.location_candidats
-WHERE chambre IS NOT NULL AND chambre <> '' AND actif is TRUE
+FROM public.location_view_n8n
+WHERE chambre IS NOT NULL AND chambre <> '' AND actif is TRUE AND a_louer is TRUE
 ORDER BY chambre ASC;

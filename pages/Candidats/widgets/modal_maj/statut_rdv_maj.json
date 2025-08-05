@@ -70,11 +70,11 @@
       "value": "Lapin"
     },
     {
-      "label": "Peux pas",
-      "value": "Peux pas"
+      "label": "Peut pas",
+      "value": "Peut pas"
     }
   ],
-  "originalBottomRow": 48,
+  "originalBottomRow": 51,
   "originalTopRow": 26,
   "parentColumnSpace": 10.869140625,
   "parentId": "vmqqxi4mbz",
