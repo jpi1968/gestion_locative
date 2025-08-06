@@ -15,18 +15,29 @@
       "key": "borderRadius"
     }
   ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
   "isDefaultClickDisabled": true,
   "isDisabled": false,
   "isLoading": false,
   "isVisible": true,
   "key": "xuforcsyfk",
-  "leftColumn": 47,
+  "leftColumn": 54,
   "minWidth": 120,
   "mobileBottomRow": 22,
   "mobileLeftColumn": 47,
   "mobileRightColumn": 63,
   "mobileTopRow": 18,
   "needsErrorInfo": false,
+  "onClick": "sms_textbee.run(\n  {\n    phoneNumber: appsmith.store.selectedMobile,\n    messageText: appsmith.store.sms_content\n  },\n  () => showAlert(\"SMS envoyé avec succès\", \"success\"),\n  (err) => showAlert(\"Erreur: \" + err.message, \"error\")\n);\n",
   "originalBottomRow": 33,
   "originalTopRow": 29,
   "parentId": "zzh1yxha8u",

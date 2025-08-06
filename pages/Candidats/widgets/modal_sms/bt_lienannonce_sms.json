@@ -36,7 +36,7 @@
   "mobileRightColumn": 42,
   "mobileTopRow": 10,
   "needsErrorInfo": false,
-  "onClick": "(() => {\n  const add_item = `Annonce LeBonCoin:\t${annonoce_sms.text}`;\n  \n  const currentValue = appsmith.store.sms_content || \"\";\n  const separator = currentValue ? \"\\n\\n\" : \"\";\n  const newValue = currentValue + separator + add_item;\n  \n  storeValue(\"sms_content\", newValue);\n  message_input_sms.setValue(newValue); // ← Widget Multiline Input\n})();",
+  "onClick": "(() => {\n  const add_item = `Annonce LeBonCoin:\t${annonce_sms.text}`;\n  \n  const currentValue = appsmith.store.sms_content || \"\";\n  const separator = currentValue ? \"\\n\\n\" : \"\";\n  const newValue = currentValue + separator + add_item;\n  \n  storeValue(\"sms_content\", newValue);\n  message_input_sms.setValue(newValue); // ← Widget Multiline Input\n})();",
   "parentColumnSpace": 18.75,
   "parentId": "zzh1yxha8u",
   "parentRowSpace": 10,

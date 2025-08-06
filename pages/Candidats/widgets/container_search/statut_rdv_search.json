@@ -2,7 +2,7 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "alignment": "left",
   "animateLoading": true,
-  "bottomRow": 29,
+  "bottomRow": 30,
   "boxShadow": "none",
   "defaultOptionValue": "{{ '' }}",
   "dynamicBindingPathList": [
@@ -83,7 +83,7 @@
       "value": "Stand by"
     }
   ],
-  "originalBottomRow": 29,
+  "originalBottomRow": 30,
   "originalTopRow": 1,
   "parentColumnSpace": 10.869140625,
   "parentId": "zh9eqp5m41",

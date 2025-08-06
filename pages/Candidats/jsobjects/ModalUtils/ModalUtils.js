@@ -39,8 +39,12 @@ export default {
 			await storeValue('selectedAdresse', this.normalizeValue(row.adresse));
 			await storeValue('selectedVille', this.normalizeValue(row.ville));
 			await storeValue('selectedGmaps', this.normalizeValue(row.gmaps));
-			await storeValue('selectedVideoAppart', this.normalizeValue(row.video_appart));
 			await storeValue('selectedVideoChambre', this.normalizeValue(row.video_chambre));
+		  await storeValue('selectedVideoAppart', row.video_appart);
+			const avant = row.video_appart;
+const apres = this.normalizeValue(row.video_appart);
+console.log("Avant normalizeValue:", avant);
+console.log("Après normalizeValue:", apres);
     }
     showModal(modal_maj.name);
   },

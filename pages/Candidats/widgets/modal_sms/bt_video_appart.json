@@ -36,7 +36,7 @@
   "mobileRightColumn": 42,
   "mobileTopRow": 10,
   "needsErrorInfo": false,
-  "onClick": "(() => {\n  const add_item = `Adresse:\t${video_appart_sms.text}`;\n  \n  const currentValue = appsmith.store.sms_content || \"\";\n  const separator = currentValue ? \"\\n\\n\" : \"\";\n  const newValue = currentValue + separator + add_item;\n  \n  storeValue(\"sms_content\", newValue);\n  message_input_sms.setValue(newValue); // ← Widget Multiline Input\n})();",
+  "onClick": "(() => {\nconst jsonbData = appsmith.store.selectedVideoAppart; // Remplacez par votre variable\n  \n  const formattedText = Object.entries(jsonbData)\n    .map(([key, value]) => `${key}: ${value}`)\n    .join('\\n');\n  const add_item = `${formattedText}`;\n  \n  const currentValue = appsmith.store.sms_content || \"\";\n  const separator = currentValue ? \"\\n\" : \"\";\n  const newValue = currentValue + separator + add_item;\n  \n  storeValue(\"sms_content\", newValue);\n  message_input_sms.setValue(newValue); // ← Widget Multiline Input\n})();",
   "parentColumnSpace": 6.6708984375,
   "parentId": "zzh1yxha8u",
   "parentRowSpace": 10,

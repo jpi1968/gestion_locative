@@ -1,0 +1,4 @@
+{
+  "mobiles_number_arr": ["{{ this.params.phoneNumber }}"],
+  "message": "{{ this.params.messageText }}"
+}
