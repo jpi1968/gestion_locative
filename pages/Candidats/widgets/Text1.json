@@ -11,17 +11,20 @@
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "text"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
   "dynamicTriggerPathList": [],
   "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
   "fontSize": "1rem",
-  "fontStyle": "BOLD",
+  "fontStyle": "",
   "isLoading": false,
   "isVisible": true,
   "key": "1oquhvj8uk",
-  "leftColumn": 37,
+  "leftColumn": 47,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -38,11 +41,11 @@
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 53,
+  "rightColumn": 63,
   "shouldTruncate": false,
-  "text": "es",
+  "text": "{{ \"Version : \" + moment().locale('fr').format('dddd DD/MM/YYYY - HH[h]mm') }}\n",
   "textAlign": "LEFT",
-  "textColor": "#231F20",
+  "textColor": "#86efac",
   "topRow": 32,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
