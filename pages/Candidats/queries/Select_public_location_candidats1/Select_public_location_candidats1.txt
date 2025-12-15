@@ -5,7 +5,16 @@ FROM
 WHERE
   "pseudo_lbc" ilike '%{{TableCandidats.searchText}}%'
 ORDER BY
-  "{{TableCandidats.sortOrder.column || 'id_candidat'}}" {{TableCandidats.sortOrder.order !== "desc" ? "" : "DESC"}}
+  CASE
+    WHEN decisions = true THEN 1
+    WHEN decisions IS NULL THEN 2
+    ELSE 3
+  END,
+  date_last DESC,
+  {{ TableCandidats.sortOrder.column || 'id_candidat' }}
+  {{ TableCandidats.sortOrder.order === "desc" ? "DESC" : "ASC" }}
+
+	
 LIMIT
   {{TableCandidats.pageSize}}
 OFFSET

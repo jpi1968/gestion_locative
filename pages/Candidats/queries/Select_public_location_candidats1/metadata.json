@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT\n  *\nFROM\n  public.location_candidats\nWHERE\n  \"pseudo_lbc\" ilike '%{{TableCandidats.searchText}}%'\nORDER BY\n  \"{{TableCandidats.sortOrder.column || 'id_candidat'}}\" {{TableCandidats.sortOrder.order !== \"desc\" ? \"\" : \"DESC\"}}\nLIMIT\n  {{TableCandidats.pageSize}}\nOFFSET\n  {{TableCandidats.pageOffset}}",
+      "body": "SELECT\n  *\nFROM\n  public.location_candidats\nWHERE\n  \"pseudo_lbc\" ilike '%{{TableCandidats.searchText}}%'\nORDER BY\n  CASE\n    WHEN decisions = true THEN 1\n    WHEN decisions IS NULL THEN 2\n    ELSE 3\n  END,\n  date_last DESC,\n  {{ TableCandidats.sortOrder.column || 'id_candidat' }}\n  {{ TableCandidats.sortOrder.order === \"desc\" ? \"DESC\" : \"ASC\" }}\n\n\t\nLIMIT\n  {{TableCandidats.pageSize}}\nOFFSET\n  {{TableCandidats.pageOffset}}",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
