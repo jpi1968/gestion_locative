@@ -22,5 +22,12 @@ WHERE
   ({{ decisions_search.selectedValues.includes('false') }} AND decisions = false)
 )
 	
-ORDER BY date_last DESC NULLS LAST
+ORDER BY
+  CASE
+    WHEN decisions IS NULL THEN 1
+		WHEN decisions = true THEN 2
+    ELSE 3
+  END,
+  date_last DESC
+	
 LIMIT 300;
