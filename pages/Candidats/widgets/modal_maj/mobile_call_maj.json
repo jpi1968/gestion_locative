@@ -36,7 +36,7 @@
   "mobileRightColumn": 40,
   "mobileTopRow": 6,
   "needsErrorInfo": false,
-  "onClick": "{{appsmith.store.selectedMobile ? navigateTo('tel:' + encodeURIComponent(appsmith.store.selectedMobile)) : showAlert('Aucun numéro', 'warning') }}",
+  "onClick": "{{appsmith.store.selectedMobile ? navigateTo('callto:' + encodeURIComponent(appsmith.store.selectedMobile)) : showAlert('Aucun numéro', 'warning') }}",
   "parentColumnSpace": 13.09375,
   "parentId": "vmqqxi4mbz",
   "parentRowSpace": 10,
