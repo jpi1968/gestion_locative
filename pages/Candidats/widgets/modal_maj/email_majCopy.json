@@ -3,9 +3,9 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 23,
+  "bottomRow": 9,
   "boxShadow": "none",
-  "defaultText": "{{ appsmith.store.selectedEmail }}",
+  "defaultText": "{{ appsmith.store.selectedChambre}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -26,13 +26,13 @@
   "isRequired": false,
   "isVisible": true,
   "key": "0nz9brnlgw",
-  "label": "Email",
+  "label": "Chbre",
   "labelAlignment": "left",
   "labelPosition": "Left",
   "labelStyle": "",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 1,
+  "leftColumn": 8,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -50,11 +50,11 @@
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",
-  "rightColumn": 18,
+  "rightColumn": 25,
   "showStepArrows": false,
-  "topRow": 19,
+  "topRow": 5,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "037gj8msfg",
-  "widgetName": "email_maj"
+  "widgetId": "v1sjdqptr4",
+  "widgetName": "email_majCopy"
 }
